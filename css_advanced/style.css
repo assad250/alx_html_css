@@ -310,19 +310,32 @@ section h2 span {
     height: 100%;
   }
   
-  .base-image {
-    object-fit: cover;
-  }
+
   
-  .overlay-image {
+ /* start */
+
+ .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.base-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-image {
     position: absolute;
-    top: 25%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Adjust size as needed */
     width: 20%;
-    height: 20%;
-    transform: translateY(-50%);
-    object-fit: contain;
-  }
+    height: auto;
+}
+
+/* end */
 .section-4 {
     background-color:#071629;
     margin-top: 10px;
